@@ -1,17 +1,32 @@
-// bubble-sort.js
-
+// Function to implement Bubble Sort
 function bubbleSort(arr) {
     let n = arr.length;
-    for (let i = 0; i < n - 1; i++) {
-        for (let j = 0; j < n - 1 - i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]; // Swap elements
-            }
+    let swapped;
+  
+    // Loop through all array elements
+    do {
+      swapped = false;
+  
+      // Loop through the array and compare each pair of adjacent elements
+      for (let i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+          // Swap the elements
+          let temp = arr[i];
+          arr[i] = arr[i + 1];
+          arr[i + 1] = temp;
+  
+          swapped = true;
         }
-    }
+      }
+      n--; // Reduce the range of comparison after each pass
+    } while (swapped);
+  
     return arr;
-}
-
-// Example input and output
-const numbers = [5, 6, 1, 3, 4, 2];
-console.log('Sorted array:', bubbleSort(numbers));
+  }
+  
+  // Sample array to be sorted
+  const numbers = [5, 3, 8, 4, 2];
+  console.log("Original array:", numbers);
+  const sortedArray = bubbleSort(numbers);
+  console.log("Sorted array:", sortedArray);
+  

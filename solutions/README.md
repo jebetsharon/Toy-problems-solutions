@@ -1,7 +1,8 @@
 # Toy Problems Solutions
 
-This repository contains solutions to various toy problems written in JavaScript. The problems are as follows:
+This repository contains solutions to various toy problems written in JavaScript. These problems are designed to practice core JavaScript concepts like loops, conditionals, and functions.
 
+## Challenges
 1. **Student Grade Generator**  
    A program that takes student marks as input and returns the corresponding grade.
 
@@ -17,7 +18,6 @@ This repository contains solutions to various toy problems written in JavaScript
    - **Cylinder Volume**: A program to calculate the volume of a cylinder.
 
 ## How to Run the Code
-
-1. Clone the repository to your local machine:
+1. Clone the repository to your local machine using:
    ```bash
-   git clone https://github.com/jebetsharon/Toy-problems-solutions.git
+   git clone https://github.com/jebetsharon/Toy-Problems-Solutions.git
